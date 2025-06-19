@@ -8,22 +8,33 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section 
+      className="relative text-white py-20 px-6 min-h-screen flex items-center"
+      style={{
+        backgroundImage: 'url(/lovable-uploads/fd28e427-e241-4bff-83bd-c9fa6ddb3525.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Overlay para melhor legibilidade */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-transparent"></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="flex items-center gap-4 mb-4">
               <img 
-                src="/lovable-uploads/87f9062c-2d4a-457c-a206-80e8aad0aa36.png" 
+                src="/lovable-uploads/574fa862-1701-4dcb-818e-4ed37a69ded7.png" 
                 alt="FACILITE Logo" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
               Garantir o Bem do Cliente 
-              <span className="text-yellow-400"> 100%</span> com 
-              <span className="text-yellow-400"> Total Cobertura</span>
+              <span className="text-orange-500"> 100%</span> com 
+              <span className="text-orange-500"> Total Cobertura</span>
             </h1>
             
             <p className="text-xl lg:text-2xl text-gray-200 leading-relaxed">
@@ -32,7 +43,7 @@ const Hero = () => {
             </p>
             
             <div className="flex items-center gap-4 text-lg">
-              <div className="flex text-yellow-400">
+              <div className="flex text-orange-500">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-current" />
                 ))}
@@ -44,12 +55,12 @@ const Hero = () => {
               <Button 
                 onClick={scrollToForm}
                 size="lg" 
-                className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-8 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all"
+                className="bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all"
               >
                 QUERO MEU SEGURO AGORA
               </Button>
               
-              <div className="flex items-center gap-2 text-yellow-400">
+              <div className="flex items-center gap-2 text-orange-400">
                 <Phone className="h-5 w-5" />
                 <span className="font-semibold">(11) 9999-9999</span>
               </div>
@@ -63,7 +74,7 @@ const Hero = () => {
                 <div className="bg-white/20 rounded-lg p-4">
                   <div className="flex justify-between items-center">
                     <span>✓ Cobertura Total</span>
-                    <span className="text-yellow-400 font-bold">100%</span>
+                    <span className="text-orange-400 font-bold">100%</span>
                   </div>
                 </div>
                 <div className="bg-white/20 rounded-lg p-4">
@@ -75,12 +86,12 @@ const Hero = () => {
                 <div className="bg-white/20 rounded-lg p-4">
                   <div className="flex justify-between items-center">
                     <span>✓ Melhor Preço</span>
-                    <span className="text-yellow-400 font-bold">GARANTIDO</span>
+                    <span className="text-orange-400 font-bold">GARANTIDO</span>
                   </div>
                 </div>
                 <Button 
                   onClick={scrollToForm}
-                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3"
                 >
                   COMEÇAR COTAÇÃO
                 </Button>

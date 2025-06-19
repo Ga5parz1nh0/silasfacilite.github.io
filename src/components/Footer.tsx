@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
@@ -10,16 +9,16 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <img 
-                src="/lovable-uploads/87f9062c-2d4a-457c-a206-80e8aad0aa36.png" 
+                src="/lovable-uploads/574fa862-1701-4dcb-818e-4ed37a69ded7.png" 
                 alt="FACILITE Logo" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-gray-300 leading-relaxed">
               Especialistas em seguro automotivo há mais de 15 anos. 
               Garantindo o bem do cliente 100% com total cobertura.
             </p>
-            <div className="flex items-center gap-2 text-yellow-400">
+            <div className="flex items-center gap-2 text-orange-400">
               <span className="text-2xl">⭐</span>
               <span className="font-bold">4.9/5 - Mais de 10.000 avaliações</span>
             </div>
@@ -27,7 +26,7 @@ const Footer = () => {
           
           {/* Coluna 2 - Contatos */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-yellow-400">Fale Conosco</h3>
+            <h3 className="text-xl font-bold text-orange-400">Fale Conosco</h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-blue-400" />
@@ -57,7 +56,7 @@ const Footer = () => {
           
           {/* Coluna 3 - Serviços */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-yellow-400">Nossos Serviços</h3>
+            <h3 className="text-xl font-bold text-orange-400">Nossos Serviços</h3>
             <ul className="space-y-3 text-gray-300">
               <li>• Seguro Auto Completo</li>
               <li>• Proteção contra Roubo e Furto</li>
@@ -72,7 +71,7 @@ const Footer = () => {
           
           {/* Coluna 4 - Localização */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-yellow-400">Onde Estamos</h3>
+            <h3 className="text-xl font-bold text-orange-400">Onde Estamos</h3>
             <div className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-blue-400 mt-1" />
               <div>
@@ -85,7 +84,7 @@ const Footer = () => {
               </div>
             </div>
             
-            <div className="bg-blue-600 rounded-lg p-4 text-center">
+            <div className="bg-orange-600 rounded-lg p-4 text-center">
               <p className="font-bold text-lg mb-2">🏆 Certificações</p>
               <div className="text-sm space-y-1">
                 <p>• SUSEP Autorizada</p>

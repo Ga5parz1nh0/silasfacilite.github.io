@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="flex items-center gap-4 mb-4">
               <img 
-                src="/lovable-uploads/574fa862-1701-4dcb-818e-4ed37a69ded7.png" 
+                src="/lovable-uploads/6f18010b-5078-41ce-9007-5f5fca7103b3.png" 
                 alt="FACILITE Logo" 
                 className="h-16 w-auto"
               />

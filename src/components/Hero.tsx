@@ -17,8 +17,13 @@ const Hero = () => {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      {/* Overlay para melhor legibilidade */}
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-transparent"></div>
+      {/* Overlay com gradiente personalizado */}
+      <div 
+        className="absolute inset-0" 
+        style={{
+          background: 'linear-gradient(to right, #1b4d9b, #001c48)'
+        }}
+      ></div>
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -33,8 +38,8 @@ const Hero = () => {
             
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
               Garantir o Bem do Cliente 
-              <span className="text-orange-500"> 100%</span> com 
-              <span className="text-orange-500"> Total Cobertura</span>
+              <span style={{ color: '#e14e06' }}> 100%</span> com 
+              <span style={{ color: '#e14e06' }}> Total Cobertura</span>
             </h1>
             
             <p className="text-xl lg:text-2xl text-gray-200 leading-relaxed">
@@ -43,7 +48,7 @@ const Hero = () => {
             </p>
             
             <div className="flex items-center gap-4 text-lg">
-              <div className="flex text-orange-500">
+              <div className="flex" style={{ color: '#e14e06' }}>
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-current" />
                 ))}
@@ -55,12 +60,16 @@ const Hero = () => {
               <Button 
                 onClick={scrollToForm}
                 size="lg" 
-                className="bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all"
+                className="text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all"
+                style={{ 
+                  backgroundColor: '#e14e06',
+                  ':hover': { backgroundColor: '#c43d05' }
+                }}
               >
                 QUERO MEU SEGURO AGORA
               </Button>
               
-              <div className="flex items-center gap-2 text-orange-400">
+              <div className="flex items-center gap-2" style={{ color: '#e14e06' }}>
                 <Phone className="h-5 w-5" />
                 <span className="font-semibold">(11) 9999-9999</span>
               </div>
@@ -74,7 +83,7 @@ const Hero = () => {
                 <div className="bg-white/20 rounded-lg p-4">
                   <div className="flex justify-between items-center">
                     <span>✓ Cobertura Total</span>
-                    <span className="text-orange-400 font-bold">100%</span>
+                    <span className="font-bold" style={{ color: '#e14e06' }}>100%</span>
                   </div>
                 </div>
                 <div className="bg-white/20 rounded-lg p-4">
@@ -86,12 +95,15 @@ const Hero = () => {
                 <div className="bg-white/20 rounded-lg p-4">
                   <div className="flex justify-between items-center">
                     <span>✓ Melhor Preço</span>
-                    <span className="text-orange-400 font-bold">GARANTIDO</span>
+                    <span className="font-bold" style={{ color: '#e14e06' }}>GARANTIDO</span>
                   </div>
                 </div>
                 <Button 
                   onClick={scrollToForm}
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3"
+                  className="w-full text-white font-bold py-3"
+                  style={{ 
+                    backgroundColor: '#e14e06'
+                  }}
                 >
                   COMEÇAR COTAÇÃO
                 </Button>

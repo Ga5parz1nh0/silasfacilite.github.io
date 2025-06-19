@@ -1,5 +1,5 @@
 
-import { Shield, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,8 +9,11 @@ const Footer = () => {
           {/* Coluna 1 - Logo e Descrição */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <Shield className="h-8 w-8 text-yellow-400" />
-              <span className="text-2xl font-bold text-yellow-400">FACILITE</span>
+              <img 
+                src="/lovable-uploads/87f9062c-2d4a-457c-a206-80e8aad0aa36.png" 
+                alt="FACILITE Logo" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-300 leading-relaxed">
               Especialistas em seguro automotivo há mais de 15 anos. 

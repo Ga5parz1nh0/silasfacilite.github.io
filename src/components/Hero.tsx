@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Shield, Phone, Star } from "lucide-react";
+import { Phone, Star } from "lucide-react";
 
 const Hero = () => {
   const scrollToForm = () => {
@@ -12,9 +12,12 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="flex items-center gap-2 mb-4">
-              <Shield className="h-8 w-8 text-yellow-400" />
-              <span className="text-2xl font-bold text-yellow-400">FACILITE</span>
+            <div className="flex items-center gap-4 mb-4">
+              <img 
+                src="/lovable-uploads/87f9062c-2d4a-457c-a206-80e8aad0aa36.png" 
+                alt="FACILITE Logo" 
+                className="h-12 w-auto"
+              />
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight">

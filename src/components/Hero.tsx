@@ -60,10 +60,9 @@ const Hero = () => {
               <Button 
                 onClick={scrollToForm}
                 size="lg" 
-                className="text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all"
+                className="text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all hover:opacity-90"
                 style={{ 
-                  backgroundColor: '#e14e06',
-                  ':hover': { backgroundColor: '#c43d05' }
+                  backgroundColor: '#e14e06'
                 }}
               >
                 QUERO MEU SEGURO AGORA
@@ -100,7 +99,7 @@ const Hero = () => {
                 </div>
                 <Button 
                   onClick={scrollToForm}
-                  className="w-full text-white font-bold py-3"
+                  className="w-full text-white font-bold py-3 hover:opacity-90 transition-opacity"
                   style={{ 
                     backgroundColor: '#e14e06'
                   }}

@@ -7,6 +7,7 @@ import Guarantee from "@/components/Guarantee";
 import About from "@/components/About";
 import RegionalManager from "@/components/RegionalManager";
 import FAQ from "@/components/FAQ";
+import Location from "@/components/Location";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -20,6 +21,7 @@ const Index = () => {
       <About />
       <RegionalManager />
       <FAQ />
+      <Location />
       <Footer />
     </div>
   );

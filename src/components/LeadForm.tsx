@@ -135,7 +135,7 @@ const LeadForm = () => {
                     value={formData.phone}
                     onChange={(e) => handleInputChange("phone", e.target.value)}
                     className="mt-1"
-                    placeholder="(11) 99999-9999"
+                    placeholder="(75) 99921-3338"
                     required
                   />
                 </div>

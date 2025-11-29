@@ -20,8 +20,8 @@ const Benefits = () => {
     },
     {
       icon: Car,
-      title: "Carro Reserva Gratuito",
-      description: "Em caso de sinistro, disponibilizamos um veículo reserva sem custo adicional enquanto o seu está na oficina."
+      title: "Carro Reserva",
+      description: "Em caso de sinistro, disponibilizamos um veículo reserva enquanto o seu está na oficina."
     },
     {
       icon: Users,

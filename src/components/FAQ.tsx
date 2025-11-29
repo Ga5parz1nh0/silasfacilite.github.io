@@ -23,7 +23,7 @@ const FAQ = () => {
     },
     {
       question: "Como acionar o seguro em caso de sinistro?",
-      answer: "Você pode acionar seu seguro de 3 formas: pelo telefone 24h (11) 9999-9999, pelo nosso app FACILITE ou pelo WhatsApp. Nossa equipe especializada te orienta em todos os procedimentos e acompanha seu caso até a resolução final."
+      answer: "Você pode acionar seu seguro de 3 formas: pelo telefone 24h (75) 99921-3338, pelo nosso app FACILITE ou pelo WhatsApp. Nossa equipe especializada te orienta em todos os procedimentos e acompanha seu caso até a resolução final."
     },
     {
       question: "Posso cancelar o seguro quando quiser?",
@@ -90,12 +90,12 @@ const FAQ = () => {
             </Button>
             
             <a 
-              href="https://wa.me/5511999999999" 
+              href="https://wa.me/5575999213338" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-3 rounded-md transition-colors inline-flex items-center justify-center"
             >
-              WhatsApp: (11) 9999-9999
+              WhatsApp: (75) 99921-3338
             </a>
           </div>
         </div>

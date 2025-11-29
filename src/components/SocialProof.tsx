@@ -1,29 +1,49 @@
-
 import { Star, Quote } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const SocialProof = () => {
   const testimonials = [
     {
-      name: "Maria Silva",
-      location: "São Paulo - SP",
+      name: "Arlindo",
+      location: "Valença - BA",
       rating: 5,
-      text: "Excelente atendimento! Quando meu carro foi roubado, a FACILITE resolveu tudo rapidamente. Recebi a indenização em apenas 15 dias. Super recomendo!",
-      avatar: "MS"
+      text: "ENTREGARAM MEU VEÍCULO SUPER RÁPIDO.",
+      avatar: "AR"
     },
     {
-      name: "João Santos",
-      location: "Rio de Janeiro - RJ",
+      name: "Max",
+      location: "Valença - BA",
       rating: 5,
-      text: "Melhor seguro que já tive. Preço justo, cobertura completa e atendimento nota 10. Já renovo há 3 anos consecutivos!",
-      avatar: "JS"
+      text: "EXCELENTE SERVIÇO, ATENDIMENTO SURREAL.",
+      avatar: "MX"
     },
     {
-      name: "Ana Costa",
-      location: "Belo Horizonte - MG",
+      name: "Pitoco",
+      location: "Valença - BA",
       rating: 5,
-      text: "Processo super fácil e rápido. Fiz a cotação online e em 2 minutos já tinha minha proposta. Contratei na hora e não me arrependo!",
-      avatar: "AC"
+      text: "EU NÃO FUI PELO PREÇO, FUI PELA QUALIDADE.",
+      avatar: "PT"
+    },
+    {
+      name: "Milena",
+      location: "Valença - BA",
+      rating: 5,
+      text: "Nossa, Superou Minhas expectativas",
+      avatar: "ML"
+    },
+    {
+      name: "Edy",
+      location: "Valença - BA",
+      rating: 5,
+      text: "Oh Silas, Minha moto ficou nova, parece que saiu da Loja",
+      avatar: "ED"
     }
   ];
 
@@ -56,34 +76,46 @@ const SocialProof = () => {
           ))}
         </div>
         
-        {/* Depoimentos */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 rounded-xl p-8 relative">
-              <Quote className="h-8 w-8 text-blue-600 mb-4" />
-              
-              <div className="flex text-yellow-500 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-current" />
-                ))}
-              </div>
-              
-              <p className="text-gray-700 mb-6 leading-relaxed">"{testimonial.text}"</p>
-              
-              <div className="flex items-center">
-                <Avatar className="h-12 w-12 mr-4">
-                  <AvatarFallback className="bg-blue-600 text-white font-bold">
-                    {testimonial.avatar}
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <div className="font-bold text-gray-800">{testimonial.name}</div>
-                  <div className="text-gray-600 text-sm">{testimonial.location}</div>
+        {/* Depoimentos em Carrossel */}
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-5xl mx-auto"
+        >
+          <CarouselContent>
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="bg-gray-50 rounded-xl p-8 relative h-full flex flex-col">
+                  <Quote className="h-8 w-8 text-blue-600 mb-4" />
+                  
+                  <div className="flex text-yellow-500 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-current" />
+                    ))}
+                  </div>
+                  
+                  <p className="text-gray-700 mb-6 leading-relaxed flex-grow">"{testimonial.text}"</p>
+                  
+                  <div className="flex items-center">
+                    <Avatar className="h-12 w-12 mr-4">
+                      <AvatarFallback className="bg-blue-600 text-white font-bold">
+                        {testimonial.avatar}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <div className="font-bold text-gray-800">{testimonial.name}</div>
+                      <div className="text-gray-600 text-sm">{testimonial.location}</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </div>
     </section>
   );

@@ -32,7 +32,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5" style={{ color: '#1b4d9b' }} />
                 <div>
-                  <p className="font-medium">(11) 9999-9999</p>
+                  <p className="font-medium">(75) 99921-3338</p>
                   <p className="text-sm text-gray-400">WhatsApp e Ligações</p>
                 </div>
               </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5" style={{ color: '#1b4d9b' }} />
                 <div>
-                  <p className="font-medium">contato@facilite.com.br</p>
+                  <p className="font-medium">btclucasbarreto@gmail.com</p>
                   <p className="text-sm text-gray-400">Atendimento por email</p>
                 </div>
               </div>
@@ -76,11 +76,10 @@ const Footer = () => {
             <div className="flex items-start gap-3">
               <MapPin className="h-5 w-5 mt-1" style={{ color: '#1b4d9b' }} />
               <div>
-                <p className="font-medium">Matriz São Paulo</p>
+                <p className="font-medium">Valença - Bahia</p>
                 <p className="text-gray-300 text-sm">
-                  Av. Paulista, 1000<br />
-                  Bela Vista - São Paulo/SP<br />
-                  CEP: 01310-100
+                  Av. Antonio Carlos Magalhães<br />
+                  São Felix - Valença/BA
                 </p>
               </div>
             </div>
@@ -101,7 +100,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
-              © 2024 FACILITE Seguros. Todos os direitos reservados. | CNPJ: 12.345.678/0001-90
+              © 2024 FACILITE Seguros. Todos os direitos reservados.
             </div>
             
             <div className="flex gap-6 text-sm text-gray-400">

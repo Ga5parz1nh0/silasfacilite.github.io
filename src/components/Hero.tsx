@@ -70,7 +70,7 @@ const Hero = () => {
               
               <div className="flex items-center gap-2" style={{ color: '#e14e06' }}>
                 <Phone className="h-5 w-5" />
-                <span className="font-semibold">(11) 9999-9999</span>
+                <span className="font-semibold">(75) 99921-3338</span>
               </div>
             </div>
           </div>

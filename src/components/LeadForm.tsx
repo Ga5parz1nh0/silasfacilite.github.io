@@ -20,9 +20,25 @@ const LeadForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Dados do formulário:", formData);
-    toast.success("Cotação enviada! Entraremos em contato em até 30 minutos.", {
-      duration: 5000,
+    
+    // Criar mensagem formatada para WhatsApp
+    const message = `*NOVA COTAÇÃO - FACILITE*%0A%0A` +
+      `*Nome:* ${formData.name}%0A` +
+      `*WhatsApp:* ${formData.phone}%0A` +
+      `*E-mail:* ${formData.email}%0A` +
+      `*Cidade:* ${formData.city}%0A%0A` +
+      `*DADOS DO VEÍCULO:*%0A` +
+      `*Marca:* ${formData.carBrand}%0A` +
+      `*Modelo:* ${formData.carModel}%0A` +
+      `*Ano:* ${formData.carYear}%0A%0A` +
+      `Gostaria de receber uma cotação personalizada!`;
+    
+    // Abrir WhatsApp com a mensagem
+    const whatsappUrl = `https://wa.me/5575999213338?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+    
+    toast.success("Redirecionando para WhatsApp...", {
+      duration: 3000,
     });
     
     // Reset form

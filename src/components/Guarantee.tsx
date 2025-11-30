@@ -64,9 +64,10 @@ const Guarantee = () => {
           <Button 
             onClick={scrollToForm}
             size="lg" 
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-xl px-12 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all"
+            className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-base md:text-xl px-6 md:px-12 py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all"
           >
-            GARANTIR MINHA PROTEÇÃO AGORA
+            <span className="md:hidden">GARANTIR PROTEÇÃO</span>
+            <span className="hidden md:inline">GARANTIR MINHA PROTEÇÃO AGORA</span>
           </Button>
         </div>
       </div>

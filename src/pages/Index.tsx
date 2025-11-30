@@ -9,6 +9,7 @@ import RegionalManager from "@/components/RegionalManager";
 import FAQ from "@/components/FAQ";
 import Location from "@/components/Location";
 import Footer from "@/components/Footer";
+import FloatingInstagram from "@/components/FloatingInstagram";
 
 const Index = () => {
   return (
@@ -23,6 +24,7 @@ const Index = () => {
       <FAQ />
       <Location />
       <Footer />
+      <FloatingInstagram />
     </div>
   );
 };

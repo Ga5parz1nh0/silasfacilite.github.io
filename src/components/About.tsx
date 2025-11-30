@@ -40,7 +40,7 @@ const About = () => {
             
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
-                Há <strong className="text-white">3 anos no mercado</strong>, a FACILITE Proteção Veicular vem 
+                Há <strong className="text-white">3 anos no mercado</strong>, a FACILITE e Fique Seguro vem 
                 conquistando a confiança de centenas de clientes com um modelo 
                 de <strong style={{ color: '#e14e06' }}>atendimento 100% humanizado e eficaz</strong>. 
                 Nosso diferencial está na transparência, agilidade e compromisso com cada associado.

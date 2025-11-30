@@ -10,6 +10,7 @@ import FAQ from "@/components/FAQ";
 import Location from "@/components/Location";
 import Footer from "@/components/Footer";
 import FloatingInstagram from "@/components/FloatingInstagram";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <FAQ />
       <Location />
       <Footer />
+      <FloatingWhatsApp />
       <FloatingInstagram />
     </div>
   );

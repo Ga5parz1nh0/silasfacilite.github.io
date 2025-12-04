@@ -1,10 +1,16 @@
 import { MapPin, Phone, Clock } from "lucide-react";
+import faciliteLogo from "@/assets/facilite-logo.png";
 
 const Location = () => {
   return (
     <section className="py-20 px-6 text-white" style={{ backgroundColor: '#001c48' }}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
+          <img 
+            src={faciliteLogo} 
+            alt="FACILITE Logo" 
+            className="h-14 w-auto mx-auto mb-6"
+          />
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Venha nos <span style={{ color: '#e14e06' }}>Visitar</span>
           </h2>

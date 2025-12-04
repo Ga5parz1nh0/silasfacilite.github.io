@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Phone, Star } from "lucide-react";
+import faciliteLogo from "@/assets/facilite-logo.png";
 
 const Hero = () => {
   const scrollToForm = () => {
@@ -30,7 +31,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="flex items-center gap-4 mb-4">
               <img 
-                src="/lovable-uploads/6f18010b-5078-41ce-9007-5f5fca7103b3.png" 
+                src={faciliteLogo} 
                 alt="FACILITE Logo" 
                 className="h-16 w-auto"
               />

@@ -34,7 +34,7 @@ const LeadForm = () => {
       `Gostaria de receber uma cotação personalizada!`;
     
     // Abrir WhatsApp com a mensagem
-    const whatsappUrl = `https://wa.me/5575999213338?text=${message}`;
+    const whatsappUrl = `https://wa.me/5575998617944?text=${message}`;
     window.open(whatsappUrl, '_blank');
     
     toast.success("Redirecionando para WhatsApp...", {

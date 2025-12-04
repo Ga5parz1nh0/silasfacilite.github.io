@@ -82,16 +82,18 @@ const FAQ = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={scrollToForm}
-              className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-3"
+            <a 
+              href="https://wa.me/5575999213338" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-8 py-3 rounded-md transition-colors inline-flex items-center justify-center"
             >
               FALAR COM ESPECIALISTA
-            </Button>
+            </a>
             
             <a 
               href="https://wa.me/5575999213338" 
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-3 rounded-md transition-colors inline-flex items-center justify-center"
             >

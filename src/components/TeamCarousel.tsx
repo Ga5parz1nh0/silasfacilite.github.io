@@ -2,6 +2,8 @@ import { Phone, Mail, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import gerenteImage from "@/assets/gerente-regional.png";
 import lucasImage from "@/assets/lucas-consultor.png";
+import nailtonImage from "@/assets/nailton-consultor.png";
+import thatyImage from "@/assets/thaty-secretaria.png";
 
 const teamMembers = [
   {
@@ -28,6 +30,34 @@ const teamMembers = [
       "Sou Consultor Autorizado da FACILITE e Fique Seguro em Valença, Bahia, pronto para ajudar você a encontrar a melhor proteção para o seu veículo.",
       "Meu compromisso é oferecer um atendimento próximo e personalizado, garantindo que você tenha todas as informações necessárias para tomar a melhor decisão.",
       "Entre em contato comigo para conhecer nossos planos e descobrir como podemos proteger o que é seu."
+    ],
+    phone: "(75) 99921-3338",
+    email: "btclucasbarreto@gmail.com"
+  },
+  {
+    id: 3,
+    name: "Nailton",
+    role: "Consultor Autorizado",
+    location: "Taperoá, Bahia",
+    image: nailtonImage,
+    description: [
+      "Sou Consultor Autorizado da FACILITE e Fique Seguro em Taperoá, Bahia, dedicado a oferecer as melhores soluções em proteção veicular para você.",
+      "Estou sempre disponível para atender e esclarecer suas dúvidas sobre nossos planos de proteção.",
+      "Entre em contato e descubra como podemos proteger seu veículo com segurança e confiança."
+    ],
+    phone: "(75) 99921-3338",
+    email: "btclucasbarreto@gmail.com"
+  },
+  {
+    id: 4,
+    name: "Thaty Alves",
+    role: "Secretária",
+    location: "Valença, Bahia",
+    image: thatyImage,
+    description: [
+      "Sou a Secretária da FACILITE e Fique Seguro, responsável por garantir que você tenha o melhor atendimento desde o primeiro contato.",
+      "Estou aqui para auxiliar em todos os processos administrativos e garantir que sua experiência seja a melhor possível.",
+      "Conte comigo para qualquer suporte que precisar!"
     ],
     phone: "(75) 99921-3338",
     email: "btclucasbarreto@gmail.com"

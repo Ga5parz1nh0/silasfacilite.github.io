@@ -1,5 +1,6 @@
 
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import faciliteLogo from "@/assets/facilite-logo.png";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <img 
-                src="/lovable-uploads/6f18010b-5078-41ce-9007-5f5fca7103b3.png" 
+                src={faciliteLogo} 
                 alt="FACILITE Logo" 
                 className="h-12 w-auto"
               />

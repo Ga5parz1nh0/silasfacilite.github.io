@@ -5,7 +5,7 @@ import SocialProof from "@/components/SocialProof";
 import LeadForm from "@/components/LeadForm";
 import Guarantee from "@/components/Guarantee";
 import About from "@/components/About";
-import RegionalManager from "@/components/RegionalManager";
+import TeamCarousel from "@/components/TeamCarousel";
 import FAQ from "@/components/FAQ";
 import Location from "@/components/Location";
 import Footer from "@/components/Footer";
@@ -21,7 +21,7 @@ const Index = () => {
       <LeadForm />
       <Guarantee />
       <About />
-      <RegionalManager />
+      <TeamCarousel />
       <FAQ />
       <Location />
       <Footer />

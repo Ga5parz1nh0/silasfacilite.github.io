@@ -11,6 +11,7 @@ const LeadForm = () => {
     email: "",
     phone: "",
     city: "",
+    carPlate: "",
     carBrand: "",
     carModel: "",
     carYear: ""
@@ -26,6 +27,7 @@ const LeadForm = () => {
       `*E-mail:* ${formData.email}%0A` +
       `*Cidade:* ${formData.city}%0A%0A` +
       `*DADOS DO VEÍCULO:*%0A` +
+      `*Placa:* ${formData.carPlate}%0A` +
       `*Marca:* ${formData.carBrand}%0A` +
       `*Modelo:* ${formData.carModel}%0A` +
       `*Ano:* ${formData.carYear}%0A%0A` +
@@ -45,6 +47,7 @@ const LeadForm = () => {
       email: "",
       phone: "",
       city: "",
+      carPlate: "",
       carBrand: "",
       carModel: "",
       carYear: ""
@@ -158,6 +161,25 @@ const LeadForm = () => {
                 </div>
               </div>
               
+              <div>
+                <Label htmlFor="carPlate" className="text-gray-700 font-medium">Placa do Veículo</Label>
+                <Input
+                  id="carPlate"
+                  type="text"
+                  value={formData.carPlate}
+                  onChange={(e) => handleInputChange("carPlate", e.target.value.toUpperCase())}
+                  className="mt-1"
+                  placeholder="Ex: ABC1D23"
+                  maxLength={7}
+                />
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="flex-1 h-px bg-gray-300"></div>
+                <span className="text-gray-500 font-medium text-sm">Ou</span>
+                <div className="flex-1 h-px bg-gray-300"></div>
+              </div>
+
               <div className="grid md:grid-cols-3 gap-4">
                 <div>
                   <Label htmlFor="carBrand" className="text-gray-700 font-medium">Marca do Veículo</Label>
@@ -172,7 +194,7 @@ const LeadForm = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="carModel" className="text-gray-700 font-medium">Modelo *</Label>
+                  <Label htmlFor="carModel" className="text-gray-700 font-medium">Modelo</Label>
                   <Input
                     id="carModel"
                     type="text"
@@ -180,7 +202,6 @@ const LeadForm = () => {
                     onChange={(e) => handleInputChange("carModel", e.target.value)}
                     className="mt-1"
                     placeholder="Ex: Civic"
-                    required
                   />
                 </div>
                 

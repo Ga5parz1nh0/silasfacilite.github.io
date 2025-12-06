@@ -20,6 +20,16 @@ const LeadForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Validação: precisa ter placa OU (marca + modelo)
+    const hasPlate = formData.carPlate.trim().length > 0;
+    const hasBrandAndModel = formData.carBrand.trim().length > 0 && formData.carModel.trim().length > 0;
+    
+    if (!hasPlate && !hasBrandAndModel) {
+      toast.error("Preencha a Placa do veículo OU informe a Marca e Modelo", {
+        duration: 4000,
+      });
+      return;
+    }
     // Criar mensagem formatada para WhatsApp
     const message = `*NOVA COTAÇÃO - FACILITE*%0A%0A` +
       `*Nome:* ${formData.name}%0A` +
@@ -162,7 +172,9 @@ const LeadForm = () => {
               </div>
               
               <div>
-                <Label htmlFor="carPlate" className="text-gray-700 font-medium">Placa do Veículo</Label>
+                <Label htmlFor="carPlate" className="text-gray-700 font-medium">
+                  Placa do Veículo {!formData.carBrand && !formData.carModel && <span className="text-red-500">*</span>}
+                </Label>
                 <Input
                   id="carPlate"
                   type="text"
@@ -182,7 +194,9 @@ const LeadForm = () => {
 
               <div className="grid md:grid-cols-3 gap-4">
                 <div>
-                  <Label htmlFor="carBrand" className="text-gray-700 font-medium">Marca do Veículo</Label>
+                  <Label htmlFor="carBrand" className="text-gray-700 font-medium">
+                    Marca do Veículo {!formData.carPlate && <span className="text-red-500">*</span>}
+                  </Label>
                   <Input
                     id="carBrand"
                     type="text"
@@ -194,7 +208,9 @@ const LeadForm = () => {
                 </div>
                 
                 <div>
-                  <Label htmlFor="carModel" className="text-gray-700 font-medium">Modelo</Label>
+                  <Label htmlFor="carModel" className="text-gray-700 font-medium">
+                    Modelo {!formData.carPlate && <span className="text-red-500">*</span>}
+                  </Label>
                   <Input
                     id="carModel"
                     type="text"

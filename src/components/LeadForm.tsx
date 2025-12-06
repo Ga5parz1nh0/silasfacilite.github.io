@@ -1,9 +1,7 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
 import { Shield, Gift } from "lucide-react";
 
@@ -56,14 +54,6 @@ const LeadForm = () => {
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
-
-  const carBrands = [
-    "Chevrolet", "Volkswagen", "Fiat", "Ford", "Honda", 
-    "Toyota", "Nissan", "Renault", "Hyundai", "Jeep", "Outro"
-  ];
-
-  const currentYear = new Date().getFullYear();
-  const years = Array.from({ length: 20 }, (_, i) => currentYear - i);
 
   return (
     <section id="formulario" className="py-20 px-6 bg-gradient-to-br from-blue-600 to-blue-800">
@@ -143,7 +133,7 @@ const LeadForm = () => {
               
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="email" className="text-gray-700 font-medium">E-mail *</Label>
+                  <Label htmlFor="email" className="text-gray-700 font-medium">E-mail</Label>
                   <Input
                     id="email"
                     type="email"
@@ -151,7 +141,6 @@ const LeadForm = () => {
                     onChange={(e) => handleInputChange("email", e.target.value)}
                     className="mt-1"
                     placeholder="seu@email.com"
-                    required
                   />
                 </div>
                 
@@ -171,17 +160,15 @@ const LeadForm = () => {
               
               <div className="grid md:grid-cols-3 gap-4">
                 <div>
-                  <Label className="text-gray-700 font-medium">Marca do Veículo *</Label>
-                  <Select onValueChange={(value) => handleInputChange("carBrand", value)} required>
-                    <SelectTrigger className="mt-1">
-                      <SelectValue placeholder="Selecione" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {carBrands.map((brand) => (
-                        <SelectItem key={brand} value={brand}>{brand}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                  <Label htmlFor="carBrand" className="text-gray-700 font-medium">Marca do Veículo</Label>
+                  <Input
+                    id="carBrand"
+                    type="text"
+                    value={formData.carBrand}
+                    onChange={(e) => handleInputChange("carBrand", e.target.value)}
+                    className="mt-1"
+                    placeholder="Ex: Honda"
+                  />
                 </div>
                 
                 <div>
@@ -198,17 +185,15 @@ const LeadForm = () => {
                 </div>
                 
                 <div>
-                  <Label className="text-gray-700 font-medium">Ano *</Label>
-                  <Select onValueChange={(value) => handleInputChange("carYear", value)} required>
-                    <SelectTrigger className="mt-1">
-                      <SelectValue placeholder="Ano" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {years.map((year) => (
-                        <SelectItem key={year} value={year.toString()}>{year}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                  <Label htmlFor="carYear" className="text-gray-700 font-medium">Ano</Label>
+                  <Input
+                    id="carYear"
+                    type="text"
+                    value={formData.carYear}
+                    onChange={(e) => handleInputChange("carYear", e.target.value)}
+                    className="mt-1"
+                    placeholder="Ex: 2020"
+                  />
                 </div>
               </div>
               

@@ -114,7 +114,7 @@ const TeamCarousel = () => {
                 <img
                   src={member.image}
                   alt={`${member.name} - ${member.role}`}
-                  className="relative rounded-2xl shadow-2xl w-full max-w-md h-[400px] object-cover object-top"
+                  className="relative rounded-2xl shadow-2xl w-[350px] h-[350px] object-cover object-center"
                 />
               </div>
             </div>

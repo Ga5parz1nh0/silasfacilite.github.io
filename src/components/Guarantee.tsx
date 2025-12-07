@@ -25,7 +25,7 @@ const Guarantee = () => {
             <CheckCircle className="h-12 w-12 text-yellow-400 mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-4">Carência de 3 Meses</h3>
             <p className="text-green-100">
-              Após o período de carência, você tem acesso completo a todas as coberturas
+              Após o período de carência, você pode cancelar a qualquer momento
             </p>
           </div>
           

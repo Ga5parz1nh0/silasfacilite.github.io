@@ -11,7 +11,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Como funciona a cotação gratuita?",
-      answer: "Nossa cotação é 100% gratuita e sem compromisso. Você preenche seus dados no formulário, nossa equipe especializada analisa seu perf e em até 2 minutos você recebe uma proposta personalizada com o melhor preço do mercado. Não há cobrança nem obrigação de contratar."
+      answer: "Nossa cotação é 100% gratuita e sem compromisso. Você preenche seus dados no formulário, nossa equipe especializada analisa seu perfil e em até 2 minutos você recebe uma proposta personalizada com o melhor preço do mercado. Não há cobrança nem obrigação de contratar."
     },
     {
       question: "Quanto tempo demora para ativar meu seguro?",
@@ -19,15 +19,15 @@ const FAQ = () => {
     },
     {
       question: "O que está incluso na cobertura total?",
-      answer: "Nossa cobertura 100% inclui: roubo e furto, colisão, incêndio, fenômenos naturais, danos elétricos, vidros, faróis, lanternas, carro reserva gratuito, assistência 24h, guincho, chaveiro, pane seca e elétrica. Tudo sem franquia para roubo e furto."
+      answer: "Nossa cobertura 100% inclui: roubo e furto, colisão, incêndio, fenômenos naturais, danos elétricos, vidros, faróis, lanternas, carro reserva, assistência 24h, guincho, chaveiro, pane seca e elétrica. Tudo sem franquia para roubo e furto."
     },
     {
       question: "Como acionar o seguro em caso de sinistro?",
-      answer: "Você pode acionar seu seguro de 3 formas: pelo telefone 24h (75) 99921-3338, pelo nosso app FACILITE ou pelo WhatsApp. Nossa equipe especializada te orienta em todos os procedimentos e acompanha seu caso até a resolução final."
+      answer: "O contato do sinistro e assistência 24h é 0800 591 5328. Nossa equipe especializada te orienta em todos os procedimentos e acompanha seu caso até a resolução final."
     },
     {
       question: "Posso cancelar o seguro quando quiser?",
-      answer: "Sim! Você tem total liberdade para cancelar seu seguro quando desejar. Inclusive, oferecemos 30 dias de garantia: se não ficar satisfeito, cancelamos e devolvemos 100% do valor pago, sem burocracia nem perguntas difíceis."
+      answer: "Tem carência de 3 meses."
     },
     {
       question: "Vocês atendem em todo o Brasil?",
@@ -35,11 +35,7 @@ const FAQ = () => {
     },
     {
       question: "Qual a diferença para outras seguradoras?",
-      answer: "Nossa diferença está no atendimento humanizado, processo 100% digital, preços competitivos e resolução rápida. Não somos apenas uma seguradora, somos seus parceiros de confiança. Além disso, oferecemos garantias únicas como satisfação total em 30 dias."
-    },
-    {
-      question: "Como é calculado o valor do meu seguro?",
-      answer: "O valor é calculado com base no seu perfil (idade, estado civil, tempo de habilitação), características do veículo (marca, modelo, ano), região onde circula e coberturas escolhidas. Sempre buscamos o melhor custo-benefício para cada cliente."
+      answer: "Nossa diferença está no atendimento humanizado, processo 100% digital, preços competitivos e resolução rápida. Não somos apenas uma seguradora, somos seus parceiros de confiança. Além disso, oferecemos garantias únicas."
     }
   ];
 

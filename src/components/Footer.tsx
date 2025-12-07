@@ -17,7 +17,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Especialistas em seguro automotivo há mais de 15 anos. 
+              Especialistas em seguro automotivo há mais de 5 anos. 
               Garantindo o bem do cliente 100% com total cobertura.
             </p>
             <div className="flex items-center gap-2" style={{ color: '#e14e06' }}>
@@ -49,8 +49,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5" style={{ color: '#1b4d9b' }} />
                 <div>
-                  <p className="font-medium">Atendimento 24h/7dias</p>
-                  <p className="text-sm text-gray-400">Emergências e sinistros</p>
+                  <p className="font-medium">Valença-BA</p>
+                  <p className="text-sm text-gray-400">Segunda a Sexta: 8h às 18h</p>
+                  <p className="text-sm text-gray-400">Sábado: 8h às 12h</p>
+                  <p className="text-sm text-gray-400">Assistência 24H</p>
                 </div>
               </div>
             </div>
@@ -64,7 +66,7 @@ const Footer = () => {
               <li>• Proteção contra Roubo e Furto</li>
               <li>• Cobertura de Colisão</li>
               <li>• Assistência 24 horas</li>
-              <li>• Carro Reserva Gratuito</li>
+              <li>• Carro Reserva</li>
               <li>• Guincho e Chaveiro</li>
               <li>• Vidros e Faróis</li>
               <li>• Fenômenos Naturais</li>
@@ -88,10 +90,8 @@ const Footer = () => {
             <div className="rounded-lg p-4 text-center" style={{ backgroundColor: '#e14e06' }}>
               <p className="font-bold text-lg mb-2">🏆 Certificações</p>
               <div className="text-sm space-y-1">
-                <p>• SUSEP Autorizada</p>
-                <p>• ISO 9001:2015</p>
-                <p>• Selo de Confiança E-bit</p>
-                <p>• Certificado Google</p>
+                <p>SUSEP 51.012.452/0001-24</p>
+                <p>FACILITE AUTOGESTÃO</p>
               </div>
             </div>
           </div>
@@ -113,8 +113,8 @@ const Footer = () => {
           
           <div className="mt-4 text-center text-xs text-gray-500">
             <p>
-              FACILITE Seguros atua como correspondente de seguros autorizado pela SUSEP. 
-              Todas as coberturas estão sujeitas à análise e aprovação da seguradora parceira.
+              FACILITE AUTOGESTÃO - SUSEP 51.012.452/0001-24. 
+              Todas as coberturas estão sujeitas à análise e aprovação.
             </p>
           </div>
         </div>

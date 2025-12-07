@@ -5,7 +5,7 @@ const About = () => {
   const achievements = [
     {
       icon: Award,
-      title: "3 Anos de Mercado",
+      title: "5 Anos de Mercado",
       description: "Construindo confiança com transparência e compromisso"
     },
     {
@@ -40,7 +40,7 @@ const About = () => {
             
             <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
               <p>
-                Há <strong className="text-white">3 anos no mercado</strong>, a FACILITE e Fique Seguro vem 
+                Há <strong className="text-white">5 anos no mercado</strong>, a FACILITE e Fique Seguro vem 
                 conquistando a confiança de centenas de clientes com um modelo 
                 de <strong style={{ color: '#e14e06' }}>atendimento 100% humanizado e eficaz</strong>. 
                 Nosso diferencial está na transparência, agilidade e compromisso com cada associado.

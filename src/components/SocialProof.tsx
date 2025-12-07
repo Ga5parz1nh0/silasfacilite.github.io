@@ -50,7 +50,7 @@ const SocialProof = () => {
   const stats = [
     { number: "50.000+", label: "Clientes Atendidos" },
     { number: "98%", label: "Satisfação dos Clientes" },
-    { number: "15+", label: "Anos de Experiência" },
+    { number: "5+", label: "Anos de Experiência" },
     { number: "24h", label: "Atendimento Disponível" }
   ];
 

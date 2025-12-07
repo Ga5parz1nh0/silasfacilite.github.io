@@ -49,7 +49,7 @@ const Guarantee = () => {
         <div className="bg-yellow-400 text-black rounded-2xl p-8 mb-8">
           <h3 className="text-2xl font-bold mb-4">🏆 Por que podemos garantir tudo isso?</h3>
           <p className="text-lg mb-4">
-            Porque temos mais de 15 anos de experiência, mais de 50.000 clientes atendidos 
+            Porque temos mais de 5 anos de experiência, mais de 50.000 clientes atendidos 
             e 98% de satisfação. Nossa reputação fala por si só!
           </p>
           <div className="text-sm font-medium">

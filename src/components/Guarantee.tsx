@@ -23,9 +23,9 @@ const Guarantee = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
             <CheckCircle className="h-12 w-12 text-yellow-400 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-4">30 Dias para Desistir</h3>
+            <h3 className="text-xl font-bold mb-4">Carência de 3 Meses</h3>
             <p className="text-green-100">
-              Se não ficar satisfeito, cancele em até 30 dias e receba 100% do seu dinheiro de volta
+              Após o período de carência, você tem acesso completo a todas as coberturas
             </p>
           </div>
           
